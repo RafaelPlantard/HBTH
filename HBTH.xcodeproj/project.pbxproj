@@ -12,6 +12,10 @@
 		5333FB6026968A3B00E40B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5333FB5F26968A3B00E40B7F /* Assets.xcassets */; };
 		5333FB6326968A3B00E40B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5333FB6126968A3B00E40B7F /* LaunchScreen.storyboard */; };
 		5333FB6C2696964300E40B7F /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB6B2696964300E40B7F /* ViewControllerDelegate.swift */; };
+		5333FB702696985D00E40B7F /* InputPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB6F2696985D00E40B7F /* InputPasscodeViewController.swift */; };
+		5333FB72269698A700E40B7F /* ImageBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB71269698A700E40B7F /* ImageBackgroundViewController.swift */; };
+		5333FB742696A08400E40B7F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB732696A08400E40B7F /* Coordinator.swift */; };
+		5333FB772696A09C00E40B7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB762696A09C00E40B7F /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		5333FB6226968A3B00E40B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5333FB6426968A3B00E40B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5333FB6B2696964300E40B7F /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		5333FB6F2696985D00E40B7F /* InputPasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasscodeViewController.swift; sourceTree = "<group>"; };
+		5333FB71269698A700E40B7F /* ImageBackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBackgroundViewController.swift; sourceTree = "<group>"; };
+		5333FB732696A08400E40B7F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5333FB762696A09C00E40B7F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +62,11 @@
 		5333FB5526968A3900E40B7F /* HBTH */ = {
 			isa = PBXGroup;
 			children = (
+				5333FB752696A09200E40B7F /* Coordinators */,
+				5333FB6E2696980E00E40B7F /* Resources */,
+				5333FB6D2696980300E40B7F /* ViewControllers */,
 				5333FB6A2696963800E40B7F /* Protocols */,
 				5333FB5626968A3900E40B7F /* AppDelegate.swift */,
-				5333FB5A26968A3900E40B7F /* HomeViewController.swift */,
-				5333FB5F26968A3B00E40B7F /* Assets.xcassets */,
-				5333FB6126968A3B00E40B7F /* LaunchScreen.storyboard */,
-				5333FB6426968A3B00E40B7F /* Info.plist */,
 			);
 			path = HBTH;
 			sourceTree = "<group>";
@@ -68,8 +75,37 @@
 			isa = PBXGroup;
 			children = (
 				5333FB6B2696964300E40B7F /* ViewControllerDelegate.swift */,
+				5333FB732696A08400E40B7F /* Coordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5333FB6D2696980300E40B7F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5333FB5A26968A3900E40B7F /* HomeViewController.swift */,
+				5333FB6F2696985D00E40B7F /* InputPasscodeViewController.swift */,
+				5333FB71269698A700E40B7F /* ImageBackgroundViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5333FB6E2696980E00E40B7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5333FB5F26968A3B00E40B7F /* Assets.xcassets */,
+				5333FB6126968A3B00E40B7F /* LaunchScreen.storyboard */,
+				5333FB6426968A3B00E40B7F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5333FB752696A09200E40B7F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5333FB762696A09C00E40B7F /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +179,11 @@
 			files = (
 				5333FB5B26968A3900E40B7F /* HomeViewController.swift in Sources */,
 				5333FB5726968A3900E40B7F /* AppDelegate.swift in Sources */,
+				5333FB742696A08400E40B7F /* Coordinator.swift in Sources */,
+				5333FB72269698A700E40B7F /* ImageBackgroundViewController.swift in Sources */,
 				5333FB6C2696964300E40B7F /* ViewControllerDelegate.swift in Sources */,
+				5333FB702696985D00E40B7F /* InputPasscodeViewController.swift in Sources */,
+				5333FB772696A09C00E40B7F /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ5WW9469F;
-				INFOPLIST_FILE = HBTH/Info.plist;
+				INFOPLIST_FILE = HBTH/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ5WW9469F;
-				INFOPLIST_FILE = HBTH/Info.plist;
+				INFOPLIST_FILE = HBTH/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
