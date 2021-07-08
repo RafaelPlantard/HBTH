@@ -16,7 +16,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         let app = UIWindow(frame: UIScreen.main.bounds)
         app.backgroundColor = .systemBackground
-        app.rootViewController = ViewController()
+        app.rootViewController = HomeViewController()
         app.makeKeyAndVisible()
 
         window = app
