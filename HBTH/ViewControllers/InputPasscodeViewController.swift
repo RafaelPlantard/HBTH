@@ -5,14 +5,26 @@
 //  Created by Rafael Ferreira on 7/7/21.
 //
 
+import KeyboardLayoutGuide
 import UIKit
 
 final class InputPasscodeViewController: ImageBackgroundViewController {
-    private let descriptionTextView = UITextView()
+    private let descriptionTextView: UITextView = {
+        let textView = UITextView()
+        textView.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        textView.isEditable = false
+        textView.isSelectable = false
+        textView.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        textView.textAlignment = .center
+
+        return textView
+    }()
 
     private let inputPasscodeTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Qual a senha encontrada?"
+        textField.keyboardType = .numberPad
+        textField.borderStyle = .roundedRect
 
         return textField
     }()
@@ -53,13 +65,12 @@ final class InputPasscodeViewController: ImageBackgroundViewController {
             descriptionTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
             descriptionTextView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             descriptionTextView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            descriptionTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
 
             inputPasscodeTextField.topAnchor.constraint(lessThanOrEqualTo: descriptionTextView.bottomAnchor, constant: 16),
             inputPasscodeTextField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
             inputPasscodeTextField.heightAnchor.constraint(equalToConstant: 44),
             inputPasscodeTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            inputPasscodeTextField.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            inputPasscodeTextField.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor, constant: -16)
         ])
     }
 }
