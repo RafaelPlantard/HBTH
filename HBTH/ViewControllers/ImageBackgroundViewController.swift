@@ -15,6 +15,14 @@ class ImageBackgroundViewController: UIViewController {
         return imageView
     }()
 
+    private let blurEffectView: UIVisualEffectView = {
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
+        let view = UIVisualEffectView(effect: blurEffect)
+        view.alpha = 0.5
+
+        return view
+    }()
+
     // MARK: - Initializer
 
     init(image: UIImage = #imageLiteral(resourceName: "marvel-step-4")) {
@@ -40,20 +48,32 @@ class ImageBackgroundViewController: UIViewController {
     private func setupView() {
         buildHierarchy()
         setupConstraints()
+        configureViews()
     }
 
     private func buildHierarchy() {
         view.addSubview(imageView)
+        view.addSubview(blurEffectView)
     }
 
     private func setupConstraints() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        blurEffectView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+
+            blurEffectView.topAnchor.constraint(equalTo: imageView.topAnchor),
+            blurEffectView.leadingAnchor.constraint(equalTo: imageView.leadingAnchor),
+            blurEffectView.trailingAnchor.constraint(equalTo: imageView.trailingAnchor),
+            blurEffectView.bottomAnchor.constraint(equalTo: imageView.bottomAnchor)
         ])
+    }
+
+    private func configureViews() {
+        view.backgroundColor = .systemBackground
     }
 }
