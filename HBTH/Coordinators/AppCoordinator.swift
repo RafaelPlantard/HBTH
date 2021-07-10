@@ -8,7 +8,7 @@
 import class UIKit.UINavigationController
 import class UIKit.UIViewController
 
-final class AppCoordinator: Coordinator, ViewControllerDelegate {
+final class AppCoordinator: Coordinator, NextViewControllerDelegate {
     private weak var navigationController: UINavigationController?
 
     // MARK: - Initializer
@@ -23,7 +23,7 @@ final class AppCoordinator: Coordinator, ViewControllerDelegate {
         setupHome()
     }
 
-    // MARK: - ViewControllerDelegate conformance
+    // MARK: - NextViewControllerDelegate conformance
 
     func goNext(from viewController: UIViewController) {
         let description = "Uma boa música é constituída por teclas brancas e petras."

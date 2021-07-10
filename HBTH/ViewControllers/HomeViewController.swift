@@ -22,7 +22,7 @@ final class HomeViewController: ImageBackgroundViewController {
 
     // MARK: - Weak variables
 
-    weak var delegate: ViewControllerDelegate?
+    weak var delegate: NextViewControllerDelegate?
 
     // MARK: - Override functions
 
