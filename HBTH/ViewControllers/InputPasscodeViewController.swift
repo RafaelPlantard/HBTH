@@ -9,9 +9,9 @@ import KeyboardLayoutGuide
 import UIKit
 
 final class InputPasscodeViewController: ImageBackgroundViewController {
-    private let descriptionTextView: UITextView = {
-        let textView = UITextView()
-        textView.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+    private lazy var descriptionTextView: UITextView = {
+        let textView = VerticallyCenteredTextView()
+        textView.backgroundColor = .clear
         textView.isEditable = false
         textView.isSelectable = false
         textView.font = UIFont.preferredFont(forTextStyle: .largeTitle)
@@ -28,6 +28,10 @@ final class InputPasscodeViewController: ImageBackgroundViewController {
 
         return textField
     }()
+
+    // MARK: - Weak variables
+
+    weak var delegate: InputTextReceivedOnViewControllerDelegate?
 
     // MARK: - Initializer
 
@@ -50,6 +54,7 @@ final class InputPasscodeViewController: ImageBackgroundViewController {
     private func setupView() {
         buildHierarchy()
         setupConstraints()
+        configureViews()
     }
 
     private func buildHierarchy() {
@@ -73,4 +78,18 @@ final class InputPasscodeViewController: ImageBackgroundViewController {
             inputPasscodeTextField.bottomAnchor.constraint(equalTo: view.keyboardLayoutGuide.topAnchor, constant: -16)
         ])
     }
+
+    private func configureViews() {
+        inputPasscodeTextField.addTarget(self, action: .textFieldValueChanged, for: .editingChanged)
+    }
+
+    @objc fileprivate func onInputPasscodeTextFieldValueChanged() {
+        delegate?.inputTextReceived(text: inputPasscodeTextField.text, on: self)
+    }
+}
+
+// MARK: - Private Selector
+
+private extension Selector {
+    static let textFieldValueChanged = #selector (InputPasscodeViewController.onInputPasscodeTextFieldValueChanged)
 }
