@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5333FB5726968A3900E40B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB5626968A3900E40B7F /* AppDelegate.swift */; };
 		5333FB5B26968A3900E40B7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB5A26968A3900E40B7F /* HomeViewController.swift */; };
-		5333FB6026968A3B00E40B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5333FB5F26968A3B00E40B7F /* Assets.xcassets */; };
 		5333FB6326968A3B00E40B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5333FB6126968A3B00E40B7F /* LaunchScreen.storyboard */; };
 		5333FB6C2696964300E40B7F /* NextViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB6B2696964300E40B7F /* NextViewControllerDelegate.swift */; };
 		5333FB702696985D00E40B7F /* InputPasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB6F2696985D00E40B7F /* InputPasscodeViewController.swift */; };
@@ -20,13 +19,24 @@
 		53DF517C269A56F400B46AED /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF517B269A56F400B46AED /* VerticallyCenteredTextView.swift */; };
 		53DF517E269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF517D269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift */; };
 		53DF5180269A5B3B00B46AED /* TextAndButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF517F269A5B3B00B46AED /* TextAndButtonViewController.swift */; };
+		53DF5183269A6DBD00B46AED /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 53DF5182269A6DBD00B46AED /* PKHUD */; };
+		53DF5185269A727C00B46AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DF5184269A727C00B46AED /* Assets.xcassets */; };
+		53DF5188269A78F300B46AED /* Unlockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5187269A78F300B46AED /* Unlockable.swift */; };
+		53DF518A269A790900B46AED /* CryptedInputDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5189269A790900B46AED /* CryptedInputDataViewModel.swift */; };
+		53DF518C269A791C00B46AED /* UncryptedDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF518B269A791C00B46AED /* UncryptedDataViewModel.swift */; };
+		53DF518E269A792E00B46AED /* CryptedDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF518D269A792E00B46AED /* CryptedDataViewModel.swift */; };
+		53DF5190269A794C00B46AED /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF518F269A794C00B46AED /* PageViewModel.swift */; };
+		53DF5193269A796700B46AED /* PageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5192269A796700B46AED /* PageRepositoryProtocol.swift */; };
+		53DF5195269A797B00B46AED /* PageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5194269A797B00B46AED /* PageRepository.swift */; };
+		53DF5197269A79BC00B46AED /* PageRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5196269A79BC00B46AED /* PageRepositoryFactory.swift */; };
+		53DF519A269A79D800B46AED /* PageToViewControllerTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5199269A79D800B46AED /* PageToViewControllerTransformer.swift */; };
+		53DF519C269A79E900B46AED /* AppCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF519B269A79E900B46AED /* AppCoordinatorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5333FB5326968A3900E40B7F /* HBTH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBTH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5333FB5626968A3900E40B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5333FB5A26968A3900E40B7F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5333FB5F26968A3B00E40B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5333FB6226968A3B00E40B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5333FB6426968A3B00E40B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5333FB6B2696964300E40B7F /* NextViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,17 @@
 		53DF517B269A56F400B46AED /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		53DF517D269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextReceivedOnViewControllerDelegate.swift; sourceTree = "<group>"; };
 		53DF517F269A5B3B00B46AED /* TextAndButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndButtonViewController.swift; sourceTree = "<group>"; };
+		53DF5184269A727C00B46AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53DF5187269A78F300B46AED /* Unlockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unlockable.swift; sourceTree = "<group>"; };
+		53DF5189269A790900B46AED /* CryptedInputDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptedInputDataViewModel.swift; sourceTree = "<group>"; };
+		53DF518B269A791C00B46AED /* UncryptedDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UncryptedDataViewModel.swift; sourceTree = "<group>"; };
+		53DF518D269A792E00B46AED /* CryptedDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptedDataViewModel.swift; sourceTree = "<group>"; };
+		53DF518F269A794C00B46AED /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
+		53DF5192269A796700B46AED /* PageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRepositoryProtocol.swift; sourceTree = "<group>"; };
+		53DF5194269A797B00B46AED /* PageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRepository.swift; sourceTree = "<group>"; };
+		53DF5196269A79BC00B46AED /* PageRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRepositoryFactory.swift; sourceTree = "<group>"; };
+		53DF5199269A79D800B46AED /* PageToViewControllerTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageToViewControllerTransformer.swift; sourceTree = "<group>"; };
+		53DF519B269A79E900B46AED /* AppCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5333FB7A2698789B00E40B7F /* KeyboardLayoutGuide in Frameworks */,
+				53DF5183269A6DBD00B46AED /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,9 @@
 		5333FB5526968A3900E40B7F /* HBTH */ = {
 			isa = PBXGroup;
 			children = (
+				53DF5198269A79C900B46AED /* Utilities */,
+				53DF5191269A795C00B46AED /* Repositories */,
+				53DF5186269A78E500B46AED /* ViewModels */,
 				53DF517A269A56E100B46AED /* Views */,
 				5333FB752696A09200E40B7F /* Coordinators */,
 				5333FB6E2696980E00E40B7F /* Resources */,
@@ -86,6 +111,7 @@
 				5333FB6B2696964300E40B7F /* NextViewControllerDelegate.swift */,
 				5333FB732696A08400E40B7F /* Coordinator.swift */,
 				53DF517D269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift */,
+				53DF5187269A78F300B46AED /* Unlockable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -104,7 +130,7 @@
 		5333FB6E2696980E00E40B7F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5333FB5F26968A3B00E40B7F /* Assets.xcassets */,
+				53DF5184269A727C00B46AED /* Assets.xcassets */,
 				5333FB6126968A3B00E40B7F /* LaunchScreen.storyboard */,
 				5333FB6426968A3B00E40B7F /* Info.plist */,
 			);
@@ -115,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				5333FB762696A09C00E40B7F /* AppCoordinator.swift */,
+				53DF519B269A79E900B46AED /* AppCoordinatorFactory.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -125,6 +152,35 @@
 				53DF517B269A56F400B46AED /* VerticallyCenteredTextView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		53DF5186269A78E500B46AED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				53DF5189269A790900B46AED /* CryptedInputDataViewModel.swift */,
+				53DF518B269A791C00B46AED /* UncryptedDataViewModel.swift */,
+				53DF518D269A792E00B46AED /* CryptedDataViewModel.swift */,
+				53DF518F269A794C00B46AED /* PageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		53DF5191269A795C00B46AED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				53DF5192269A796700B46AED /* PageRepositoryProtocol.swift */,
+				53DF5194269A797B00B46AED /* PageRepository.swift */,
+				53DF5196269A79BC00B46AED /* PageRepositoryFactory.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		53DF5198269A79C900B46AED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				53DF5199269A79D800B46AED /* PageToViewControllerTransformer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +201,7 @@
 			name = HBTH;
 			packageProductDependencies = (
 				5333FB792698789B00E40B7F /* KeyboardLayoutGuide */,
+				53DF5182269A6DBD00B46AED /* PKHUD */,
 			);
 			productName = HBTH;
 			productReference = 5333FB5326968A3900E40B7F /* HBTH.app */;
@@ -175,6 +232,7 @@
 			mainGroup = 5333FB4A26968A3900E40B7F;
 			packageReferences = (
 				5333FB782698789B00E40B7F /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */,
+				53DF5181269A6DBD00B46AED /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 5333FB5426968A3900E40B7F /* Products */;
 			projectDirPath = "";
@@ -190,8 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DF5185269A727C00B46AED /* Assets.xcassets in Resources */,
 				5333FB6326968A3B00E40B7F /* LaunchScreen.storyboard in Resources */,
-				5333FB6026968A3B00E40B7F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,13 +263,23 @@
 				53DF517C269A56F400B46AED /* VerticallyCenteredTextView.swift in Sources */,
 				53DF5180269A5B3B00B46AED /* TextAndButtonViewController.swift in Sources */,
 				53DF517E269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift in Sources */,
+				53DF519C269A79E900B46AED /* AppCoordinatorFactory.swift in Sources */,
 				5333FB5B26968A3900E40B7F /* HomeViewController.swift in Sources */,
 				5333FB5726968A3900E40B7F /* AppDelegate.swift in Sources */,
+				53DF5188269A78F300B46AED /* Unlockable.swift in Sources */,
+				53DF5193269A796700B46AED /* PageRepositoryProtocol.swift in Sources */,
+				53DF5197269A79BC00B46AED /* PageRepositoryFactory.swift in Sources */,
+				53DF5195269A797B00B46AED /* PageRepository.swift in Sources */,
+				53DF518E269A792E00B46AED /* CryptedDataViewModel.swift in Sources */,
 				5333FB742696A08400E40B7F /* Coordinator.swift in Sources */,
 				5333FB72269698A700E40B7F /* ImageBackgroundViewController.swift in Sources */,
 				5333FB6C2696964300E40B7F /* NextViewControllerDelegate.swift in Sources */,
+				53DF5190269A794C00B46AED /* PageViewModel.swift in Sources */,
 				5333FB702696985D00E40B7F /* InputPasscodeViewController.swift in Sources */,
+				53DF518C269A791C00B46AED /* UncryptedDataViewModel.swift in Sources */,
 				5333FB772696A09C00E40B7F /* AppCoordinator.swift in Sources */,
+				53DF519A269A79D800B46AED /* PageToViewControllerTransformer.swift in Sources */,
+				53DF518A269A790900B46AED /* CryptedInputDataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +483,14 @@
 				minimumVersion = 1.7.0;
 			};
 		};
+		53DF5181269A6DBD00B46AED /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -422,6 +498,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5333FB782698789B00E40B7F /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */;
 			productName = KeyboardLayoutGuide;
+		};
+		53DF5182269A6DBD00B46AED /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53DF5181269A6DBD00B46AED /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

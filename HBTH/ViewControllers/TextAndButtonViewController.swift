@@ -38,9 +38,10 @@ final class TextAndButtonViewController: ImageBackgroundViewController {
 
     // MARK: - Initializer
 
-    init(description: String, image: UIImage) {
+    init(description: String, image: UIImage, button: String) {
         super.init(image: image)
 
+        nextButtonAction.title = button
         descriptionTextView.text = description
     }
 
@@ -66,6 +67,7 @@ final class TextAndButtonViewController: ImageBackgroundViewController {
 
     private func setupConstraints() {
         descriptionTextView.translatesAutoresizingMaskIntoConstraints = false
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             descriptionTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),

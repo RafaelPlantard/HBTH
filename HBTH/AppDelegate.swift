@@ -22,7 +22,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Private lazy variables
 
-    private lazy var coordinator: Coordinator = AppCoordinator(navigationController: navigationController)
+    private lazy var coordinator: Coordinator = AppCoordinatorFactory.make(navigationController: navigationController)
 
     // MARK: - UIApplicationDelegate conforms
 
