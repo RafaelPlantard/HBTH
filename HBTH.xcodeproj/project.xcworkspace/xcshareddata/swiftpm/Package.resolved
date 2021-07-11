@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "KeyboardLayoutGuide",
-        "repositoryURL": "git@github.com:freshOS/KeyboardLayoutGuide.git",
+        "repositoryURL": "https://github.com/freshOS/KeyboardLayoutGuide",
         "state": {
           "branch": null,
           "revision": "2a62a1a0b64e3c7db227c7da67e94292c1897903",
@@ -12,7 +12,7 @@
       },
       {
         "package": "PKHUD",
-        "repositoryURL": "git@github.com:pkluz/PKHUD.git",
+        "repositoryURL": "https://github.com/pkluz/PKHUD",
         "state": {
           "branch": null,
           "revision": "8fd26f23057c6bebd6695524b1c3e05e93aba571",

@@ -15,11 +15,9 @@
 		5333FB72269698A700E40B7F /* ImageBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB71269698A700E40B7F /* ImageBackgroundViewController.swift */; };
 		5333FB742696A08400E40B7F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB732696A08400E40B7F /* Coordinator.swift */; };
 		5333FB772696A09C00E40B7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333FB762696A09C00E40B7F /* AppCoordinator.swift */; };
-		5333FB7A2698789B00E40B7F /* KeyboardLayoutGuide in Frameworks */ = {isa = PBXBuildFile; productRef = 5333FB792698789B00E40B7F /* KeyboardLayoutGuide */; };
 		53DF517C269A56F400B46AED /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF517B269A56F400B46AED /* VerticallyCenteredTextView.swift */; };
 		53DF517E269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF517D269A598500B46AED /* InputTextReceivedOnViewControllerDelegate.swift */; };
 		53DF5180269A5B3B00B46AED /* TextAndButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF517F269A5B3B00B46AED /* TextAndButtonViewController.swift */; };
-		53DF5183269A6DBD00B46AED /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 53DF5182269A6DBD00B46AED /* PKHUD */; };
 		53DF5185269A727C00B46AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53DF5184269A727C00B46AED /* Assets.xcassets */; };
 		53DF5188269A78F300B46AED /* Unlockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5187269A78F300B46AED /* Unlockable.swift */; };
 		53DF518A269A790900B46AED /* CryptedInputDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5189269A790900B46AED /* CryptedInputDataViewModel.swift */; };
@@ -31,6 +29,8 @@
 		53DF5197269A79BC00B46AED /* PageRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5196269A79BC00B46AED /* PageRepositoryFactory.swift */; };
 		53DF519A269A79D800B46AED /* PageToViewControllerTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF5199269A79D800B46AED /* PageToViewControllerTransformer.swift */; };
 		53DF519C269A79E900B46AED /* AppCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DF519B269A79E900B46AED /* AppCoordinatorFactory.swift */; };
+		53DF519F269A7FF400B46AED /* KeyboardLayoutGuide in Frameworks */ = {isa = PBXBuildFile; productRef = 53DF519E269A7FF400B46AED /* KeyboardLayoutGuide */; };
+		53DF51A2269A803300B46AED /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 53DF51A1269A803300B46AED /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5333FB7A2698789B00E40B7F /* KeyboardLayoutGuide in Frameworks */,
-				53DF5183269A6DBD00B46AED /* PKHUD in Frameworks */,
+				53DF519F269A7FF400B46AED /* KeyboardLayoutGuide in Frameworks */,
+				53DF51A2269A803300B46AED /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +200,8 @@
 			);
 			name = HBTH;
 			packageProductDependencies = (
-				5333FB792698789B00E40B7F /* KeyboardLayoutGuide */,
-				53DF5182269A6DBD00B46AED /* PKHUD */,
+				53DF519E269A7FF400B46AED /* KeyboardLayoutGuide */,
+				53DF51A1269A803300B46AED /* PKHUD */,
 			);
 			productName = HBTH;
 			productReference = 5333FB5326968A3900E40B7F /* HBTH.app */;
@@ -231,8 +231,8 @@
 			);
 			mainGroup = 5333FB4A26968A3900E40B7F;
 			packageReferences = (
-				5333FB782698789B00E40B7F /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */,
-				53DF5181269A6DBD00B46AED /* XCRemoteSwiftPackageReference "PKHUD" */,
+				53DF519D269A7FF400B46AED /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */,
+				53DF51A0269A803300B46AED /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 5333FB5426968A3900E40B7F /* Products */;
 			projectDirPath = "";
@@ -475,17 +475,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5333FB782698789B00E40B7F /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */ = {
+		53DF519D269A7FF400B46AED /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:freshOS/KeyboardLayoutGuide.git";
+			repositoryURL = "https://github.com/freshOS/KeyboardLayoutGuide";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.7.0;
 			};
 		};
-		53DF5181269A6DBD00B46AED /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+		53DF51A0269A803300B46AED /* XCRemoteSwiftPackageReference "PKHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:pkluz/PKHUD.git";
+			repositoryURL = "https://github.com/pkluz/PKHUD";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.4.0;
@@ -494,14 +494,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5333FB792698789B00E40B7F /* KeyboardLayoutGuide */ = {
+		53DF519E269A7FF400B46AED /* KeyboardLayoutGuide */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5333FB782698789B00E40B7F /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */;
+			package = 53DF519D269A7FF400B46AED /* XCRemoteSwiftPackageReference "KeyboardLayoutGuide" */;
 			productName = KeyboardLayoutGuide;
 		};
-		53DF5182269A6DBD00B46AED /* PKHUD */ = {
+		53DF51A1269A803300B46AED /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 53DF5181269A6DBD00B46AED /* XCRemoteSwiftPackageReference "PKHUD" */;
+			package = 53DF51A0269A803300B46AED /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
